@@ -2,10 +2,13 @@
 <h1>Flatiron</h1>
 <h2>Team Motto: <%= @team.motto %>
 <br>
+<% i = 0 %>
 <% @heroes.each do |hero| %>
 <div class = "hero">
+  <h2>Hero<%= i %>
   <p> <h2> Hero's Name: <%= hero.name %> </h2> </p>
   <p> <h2> Hero's Power: <%= hero.power %> </h2> </p>
   <p> <h2> Hero's Biography: <%= hero.biography %> </h2> </p>
+  <% i += 1 %>
 <% end %>
 </body>
