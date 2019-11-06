@@ -6,5 +6,5 @@ class Team
     @name = args[:name]
     @motto = args[:motto]
   end
-  
+
 end
