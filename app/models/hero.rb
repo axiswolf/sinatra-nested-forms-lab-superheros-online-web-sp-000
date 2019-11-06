@@ -9,4 +9,8 @@ class Hero
     @@heroes << self
   end
 
+  def self.all
+      @@heroes
+  end
+
 end
