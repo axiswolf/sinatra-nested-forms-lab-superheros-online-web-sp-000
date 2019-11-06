@@ -18,6 +18,7 @@ class App < Sinatra::Base
         Hero.new({name: member[:name], power: member[:power], biography: member[:biography]})
       end
       @heroes = Hero.all
+      
       erb :team
     end
 end
